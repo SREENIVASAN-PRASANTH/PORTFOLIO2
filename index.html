@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanth - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+        }
+        .poppins-light {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }          
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            font-size: 22px;
+            background-color: white;
+            color: black;
+            
+        }
+          
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li a:hover{
+            color: red;
+            font-size:22.3px;
+        }
+
+        .left{
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .firstLeftSection{
+            background-color:transparent;
+            
+            color: white;
+            font-size: 2rem;
+
+        }
+
+        .firstSection > div{
+            width: 30%;
+        }
+
+        .firstRightSection{
+            background-color: white;
+            width: 30%;
+            color: black;
+            border-radius: 1000px;
+        }
+
+        .profileImage{
+            width: 100%;
+            border-radius: 1000px;
+        }
+
+        hr{
+            border: none;
+            background-color: white;
+            height: 2px;
+            max-width: 85vw;
+            margin: auto;
+        }
+
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body class = "poppins-light">
+    <header>
+        <nav>
+            <div class = "left">Prasanth's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="/index.html">Services</a></li>
+                    <li><a href="/index.html">Projects</a></li>
+                    <li><a href="/index.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="firstLeftSection">
+                Hi, I'm <span class="red">Prasanth</span>,
+                <div><span id="element"></span></div>
+                
+            </div>
+            <div class="firstRightSection">
+                <img src="linkedin profile.png" class = "profileImage" alt="Profile photo">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['a Front-end Developer', 'a Python programmer', 'a Football player'],
+          typeSpeed: 50,
+        });
+    </script>
+    
+</body>
+</html>
